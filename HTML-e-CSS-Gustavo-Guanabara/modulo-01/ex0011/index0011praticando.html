@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando com imagens</title>
+</head>
+<body>
+    <h1>Adicionando mídia, imagens dinâmicas ao site</h1>
+    <p>Veja abaixo a imagem irá se adaptar ao tamanho da janela do site, para que quando seja aberta em diferentes dispositivos ela possa se adaptar.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/csgo-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/csgo-m.png" type="image/png">
+        <img src="imagens/csgo-g.png" alt="csgo-grande">
+    </picture>
+</body>
+</html>
