@@ -7,20 +7,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 768px) {
-
 body {
     background-color: lightgray;
 }
 
 header {
     background-color: rgba(128, 128, 128, 0.900);
-    text-align: center;
 }
 
 header h1 {
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: center;
 }
 
 span#burguer {
@@ -30,6 +28,7 @@ span#burguer {
     text-align: center;
     padding: 10px;
     transition: .7s;
+    cursor: pointer;
 }
 
 span#burguer:hover {
@@ -38,13 +37,13 @@ span#burguer:hover {
 }
 
 nav {
-    background-color: rgba(128, 128, 128, 0.900);
     display: none;
 }
 
 nav a {
     background-color: rgb(87, 87, 87);
     text-decoration: none;
+    text-align: center;
     display: block;
     color: white;
     transition: .5s;
@@ -57,8 +56,10 @@ nav a:hover {
 }
 
 main {
-    padding: 10px;
-    margin: 15px 15px;
+    max-width: 768px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
     background-color: white;
     border-radius: 10px;
 }
@@ -71,58 +72,4 @@ article p {
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
-}
-
-}
-
-/*------------------------*/
-
-@media screen and (min-width: 768px) {
-
-body {
-    background-color: lightgray;
-}
-
-header {
-    background-color: rgba(128, 128, 128, 0.900);
-    padding-bottom: 10px;
-}
-
-header h1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-nav a {
-    background-color: rgb(87, 87, 87);
-    text-decoration: none;
-    color: white;
-    transition: .5s;
-    padding: 10px;
-}
-
-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.300);
-}
-
-main {
-    width: 769px;
-    padding: 10px;
-    margin: auto;
-    margin-top: 15px;
-    background-color: white;
-    border-radius: 10px;
-}
-
-main article h2 {
-    padding-bottom: 20px;
-}
-
-main article p {
-    text-align: justify;
-    margin-bottom: 20px;
-    text-indent: 20px;
-}
-
 }
