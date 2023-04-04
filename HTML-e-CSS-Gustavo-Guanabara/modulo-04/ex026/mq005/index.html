@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <nav class="container">
-            <a class="bar1" href="#">Home</a>
-            <a class="bar2" href="#">Notíciais</a>
-            <a class="bar3" href="#">Tecnologias</a>
-            <a class="bar4" href="#">Quem somos</a>
-            <a class="bar5" href="#">FAQ</a>
+        <span id ="burguer" class="material-symbols-outlined" onclick="clickNav()">
+        menu</span>
+        <nav id="navBar">
+            <a href="#">Home</a>
+            <a href="#">Notíciais</a>
+            <a href="#">Tecnologias</a>
+            <a href="#">Quem somos</a>
+            <a href="#">FAQ</a>
         </nav>
     </header>
     <main>
@@ -26,5 +29,14 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam similique dicta asperiores quae sequi obcaecati, blanditiis nostrum quo harum quibusdam ea aspernatur odio eaque doloribus sed adipisci, iste illum odit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia et fugit voluptates non quos delectus dolor error, ducimus dolore, deleniti voluptate, quas perspiciatis nihil eos modi recusandae. Blanditiis, nemo ipsum. lorem</p>
         </article>
     </main>
+    <script>
+        function clickNav() {
+            if (navBar.style.display == 'block') {
+            navBar.style.display = 'none'
+            } else {
+                navBar.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
