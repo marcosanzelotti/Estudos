@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media  screen and (max-width: 700px) {
+    .android {
+        background-image: url(../images/dan-droids-pq.png);
+        height: 250px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+
+    .irina {
+        background-image: url(../images/irina-blok-pq.jpg);
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+}
